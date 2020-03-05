@@ -139,7 +139,7 @@ class MainActivity : AppCompatActivity() {
         menu.setHeaderTitle("Select ")
 
         menu.add(Menu.NONE, 0, Menu.NONE, "Update")
-        menu.add(Menu.NONE, 0, Menu.NONE, "Delete")
+        menu.add(Menu.NONE, 1, Menu.NONE, "Delete")
     }
 
     override fun onContextItemSelected(item: MenuItem): Boolean {
