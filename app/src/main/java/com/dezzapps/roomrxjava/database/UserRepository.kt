@@ -31,4 +31,17 @@ class UserRepository (private val mLocationDataSource: IUserDataSource): IUserDa
         mLocationDataSource.deleteAllUser()
 
     }
+
+    companion object {
+        private var mInstance: UserRepository ?= null
+
+        fun getInstance(mLocationDataSource: IUserDataSource) : UserRepository{
+            if(mInstance == null) {
+                mInstance = UserRepository(mLocationDataSource)
+            }
+            return mInstance!!
+        }
+    }
+
+
 }

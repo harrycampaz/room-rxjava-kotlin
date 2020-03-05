@@ -13,7 +13,7 @@ class User {
     var id: Int = 0
 
     @ColumnInfo(name = "name")
-    var name: String? =null
+    var name: String?=null
 
     @ColumnInfo(name = "email")
     var email: String?=null
