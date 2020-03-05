@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">RoomRxJava</string>
+    <string name="delete">Clean</string>
+</resources>
